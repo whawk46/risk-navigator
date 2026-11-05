@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-11-04T03:07:56Z",
+  "generated_at": "2026-11-05T10:49:48Z",
   "methodology": "Live public API evidence collection plus v0 deterministic scoring heuristics.",
   "records": [
     {
@@ -13,22 +13,22 @@
         "homepage": "https://logging.apache.org/log4j/2.x/"
       },
       "scores": {
-        "project_vitality": 94.2,
+        "project_vitality": 93.9,
         "security_health": 50.3,
         "sustainability_governance": 74.5,
-        "dependency_hygiene": 72.9,
+        "dependency_hygiene": 72.8,
         "ecosystem_resilience": 76.0,
         "ecosystem_criticality": 64.1,
         "confidence": 0.91,
-        "oss_vitality": 73.4,
-        "enterprise_priority_risk": 21.6,
-        "undermaintenance_pressure": 1.61
+        "oss_vitality": 73.3,
+        "enterprise_priority_risk": 21.7,
+        "undermaintenance_pressure": 1.59
       },
       "evidence": {
         "openssf_scorecard": {
           "source": "openssf-scorecard-api",
           "url": "https://api.scorecard.dev/projects/github.com/apache/logging-log4j2",
-          "observed_at": "2026-11-04T03:00:38Z",
+          "observed_at": "2026-11-05T10:55:32Z",
           "confidence": 0.95,
           "score": 8.3,
           "scorecard_version": "v4.13.1",
@@ -144,9 +144,10 @@
             }
           ],
           "api": {
-            "cache": "hit",
+            "cache": "miss",
             "url": "https://api.scorecard.dev/projects/github.com/apache/logging-log4j2",
-            "retrieved_at": "2026-11-04T03:00:38Z"
+            "status": 200,
+            "retrieved_at": "2026-11-05T10:55:32Z"
           }
         },
         "openssf_criticality": {
@@ -156,29 +157,29 @@
         },
         "chaoss_derived": {
           "source": "github-api-derived",
-          "observed_at": "2026-11-04T03:00:07Z",
+          "observed_at": "2026-11-05T10:55:21Z",
           "confidence": 0.765,
-          "active_contributors_365d": 45,
-          "active_contributors_180d": 31,
-          "active_contributors_90d": 30,
-          "active_contributors_30d": 13,
-          "commits_365d": 160,
-          "commits_180d": 127,
-          "commits_90d": 84,
-          "commits_30d": 20,
-          "issues_opened_365d": 57,
-          "issues_closed_365d": 35,
-          "issue_closure_ratio_365d": 0.614,
+          "active_contributors_365d": 47,
+          "active_contributors_180d": 33,
+          "active_contributors_90d": 32,
+          "active_contributors_30d": 15,
+          "commits_365d": 172,
+          "commits_180d": 138,
+          "commits_90d": 96,
+          "commits_30d": 32,
+          "issues_opened_365d": 0,
+          "issues_closed_365d": 0,
+          "issue_closure_ratio_365d": null,
           "closed_pr_sample": 300,
-          "merged_pr_sample": 207,
-          "pr_merge_ratio": 0.69,
-          "median_pr_merge_days": 5.87,
+          "merged_pr_sample": 214,
+          "pr_merge_ratio": 0.713,
+          "median_pr_merge_days": 6.89,
           "commit_sample_truncated": false
         },
         "osv": {
           "source": "osv-query-api",
           "url": "https://api.osv.dev/v1/query",
-          "observed_at": "2026-11-04T03:00:40Z",
+          "observed_at": "2026-11-05T10:55:33Z",
           "confidence": 0.9,
           "query": {
             "package": {
@@ -313,19 +314,20 @@
             }
           ],
           "api": {
-            "cache": "hit",
+            "cache": "miss",
             "url": "https://api.osv.dev/v1/query",
-            "retrieved_at": "2026-11-04T03:00:40Z"
+            "status": 200,
+            "retrieved_at": "2026-11-05T10:55:33Z"
           }
         },
         "cisa_kev": {
           "source": "cisa-kev-json",
           "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
-          "observed_at": "2026-11-04T02:38:44Z",
-          "catalog_version": "2026.11.03",
-          "catalog_date_released": "2026-11-03T20:00:24.8741Z",
+          "observed_at": "2026-11-05T10:50:00Z",
+          "catalog_version": "2026.11.04",
+          "catalog_date_released": "2026-11-04T20:00:05.774Z",
           "confidence": 0.95,
-          "catalog_count": 1767,
+          "catalog_count": 1768,
           "matched_count": 2,
           "matched_cves": [
             "CVE-2021-45046",
@@ -350,71 +352,78 @@
             }
           ],
           "api": {
-            "cache": "hit",
+            "cache": "miss",
             "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
-            "retrieved_at": "2026-11-04T02:38:44Z"
+            "status": 200,
+            "retrieved_at": "2026-11-05T10:50:00Z"
           }
         },
         "github": {
           "source": "github-api",
           "url": "https://api.github.com/repos/apache/logging-log4j2",
-          "observed_at": "2026-11-04T03:00:07Z",
+          "observed_at": "2026-11-05T10:55:21Z",
           "confidence": 0.9,
-          "stars": 3641,
-          "forks": 1760,
-          "open_issues": 239,
+          "stars": 3643,
+          "forks": 1761,
+          "open_issues": 222,
           "created_at": "2013-06-12T07:00:19Z",
-          "pushed_at": "2026-11-03T23:35:24Z",
+          "pushed_at": "2026-11-04T22:28:23Z",
           "default_branch": "2.x",
           "latest_release": "rel/2.25.5",
           "latest_release_at": "2026-07-06T08:29:03Z",
-          "commits_365d": 160,
-          "commits_180d": 127,
-          "commits_90d": 84,
-          "commits_30d": 20,
-          "active_contributors_365d": 45,
-          "active_contributors_180d": 31,
-          "active_contributors_90d": 30,
-          "active_contributors_30d": 13,
-          "issues_opened_365d": 57,
-          "issues_closed_365d": 35,
-          "issue_closure_ratio_365d": 0.614,
+          "commits_365d": 172,
+          "commits_180d": 138,
+          "commits_90d": 96,
+          "commits_30d": 32,
+          "active_contributors_365d": 47,
+          "active_contributors_180d": 33,
+          "active_contributors_90d": 32,
+          "active_contributors_30d": 15,
+          "issues_opened_365d": 0,
+          "issues_closed_365d": 0,
+          "issue_closure_ratio_365d": null,
           "closed_pr_sample": 300,
-          "merged_pr_sample": 207,
-          "pr_merge_ratio": 0.69,
-          "median_pr_merge_days": 5.87,
+          "merged_pr_sample": 214,
+          "pr_merge_ratio": 0.713,
+          "median_pr_merge_days": 6.89,
           "commit_sample_truncated": false,
           "repo_api": {
-            "cache": "hit",
+            "cache": "miss",
             "url": "https://api.github.com/repos/apache/logging-log4j2",
-            "retrieved_at": "2026-11-04T03:00:07Z"
+            "status": 200,
+            "retrieved_at": "2026-11-05T10:55:21Z"
           },
           "release_api": {
-            "cache": "hit",
+            "cache": "miss",
             "url": "https://api.github.com/repos/apache/logging-log4j2/releases?per_page=100&page=1",
-            "retrieved_at": "2026-11-04T03:00:09Z"
+            "status": 200,
+            "retrieved_at": "2026-11-05T10:55:22Z"
           },
           "commit_api": {
             "cache": "miss",
-            "url": "https://api.github.com/repos/apache/logging-log4j2/commits?since=2025-11-04T03:07:56Z&per_page=100&page=1",
+            "url": "https://api.github.com/repos/apache/logging-log4j2/commits?since=2025-11-05T10:49:48Z&per_page=100&page=1",
             "status": 200,
-            "retrieved_at": "2026-11-04T03:07:57Z"
+            "retrieved_at": "2026-11-05T10:55:23Z",
+            "pages_fetched": 2
           },
           "issue_api": {
             "cache": "miss",
-            "url": "https://api.github.com/repos/apache/logging-log4j2/issues?state=all&since=2025-11-04T03:07:56Z&per_page=100&page=1",
+            "url": "https://api.github.com/repos/apache/logging-log4j2/issues?state=all&since=2025-11-05T10:49:48Z&per_page=100&page=1",
             "status": 200,
-            "retrieved_at": "2026-11-04T03:07:58Z"
+            "retrieved_at": "2026-11-05T10:55:25Z",
+            "pages_fetched": 3
           },
           "pull_api": {
-            "cache": "hit",
+            "cache": "miss",
             "url": "https://api.github.com/repos/apache/logging-log4j2/pulls?state=closed&per_page=100&page=1",
-            "retrieved_at": "2026-11-04T03:00:28Z"
+            "status": 200,
+            "retrieved_at": "2026-11-05T10:55:29Z",
+            "pages_fetched": 3
           }
         },
         "package_registry": {
           "source": "combined-registry-evidence",
-          "observed_at": "2026-11-04T03:00:38Z",
+          "observed_at": "2026-11-05T10:55:32Z",
           "confidence": 0.9,
           "url": "https://api.deps.dev/v3/systems/MAVEN/packages/org.apache.logging.log4j%3Alog4j-core",
           "system": "MAVEN",
@@ -427,14 +436,16 @@
           "direct_dependent_count": 101,
           "indirect_dependent_count": 144,
           "package_api": {
-            "cache": "hit",
+            "cache": "miss",
             "url": "https://api.deps.dev/v3/systems/MAVEN/packages/org.apache.logging.log4j%3Alog4j-core",
-            "retrieved_at": "2026-11-04T03:00:38Z"
+            "status": 200,
+            "retrieved_at": "2026-11-05T10:55:32Z"
           },
           "dependents_api": {
-            "cache": "hit",
+            "cache": "miss",
             "url": "https://api.deps.dev/v3alpha/systems/MAVEN/packages/org.apache.logging.log4j%3Alog4j-core/versions/3.0.0-beta3:dependents",
-            "retrieved_at": "2026-11-04T03:00:39Z"
+            "status": 200,
+            "retrieved_at": "2026-11-05T10:55:32Z"
           }
         },
         "governance_docs": {
@@ -446,19 +457,20 @@
           "source": "osera-openvex-feed",
           "url": "https://feed.finos.org/openvex.json",
           "feed_id": "https://feed.finos.org/openvex.json",
-          "feed_version": 161,
-          "feed_last_updated": "2026-11-02T15:22:11Z",
-          "retrieved_at": "2026-11-04T02:38:45Z",
-          "observed_at": "2026-11-04T02:38:45Z",
+          "feed_version": 193,
+          "feed_last_updated": "2026-11-05T10:46:14Z",
+          "retrieved_at": "2026-11-05T10:50:01Z",
+          "observed_at": "2026-11-05T10:50:01Z",
           "confidence": 0.95,
           "coverage_status": "covered",
-          "published_patch_count": 9,
+          "published_patch_count": 10,
           "published_versions": [
             "2.24.3.1-osera-00005",
             "2.24.3.1-osera-00004",
             "2.24.3.1-osera-00003",
             "2.24.3.1-osera-00002",
             "2.24.3.1-osera-00001",
+            "2.17.2.1-osera-00005",
             "2.17.2.1-osera-00004",
             "2.17.2.1-osera-00003",
             "2.17.2.1-osera-00002",
@@ -482,9 +494,9 @@
             "CVE-2026-34479",
             "CVE-2026-34480"
           ],
-          "raw_statement_count": 20,
-          "deduplicated_statement_count": 20,
-          "statement_count": 20,
+          "raw_statement_count": 23,
+          "deduplicated_statement_count": 23,
+          "statement_count": 23,
           "patches": [
             {
               "purl": "pkg:maven/org.apache.logging.log4j/log4j-core@2.24.3.1-osera-00005",
@@ -594,6 +606,29 @@
                 "GHSA-3pxv-7cmr-fjr4"
               ],
               "fixed_cves": [
+                "CVE-2026-34480"
+              ]
+            },
+            {
+              "purl": "pkg:maven/org.apache.logging.log4j/log4j-core@2.17.2.1-osera-00005",
+              "version": "2.17.2.1-osera-00005",
+              "base_version": "2.17.2.1",
+              "osera_sequence": 5,
+              "supplier": "moderne",
+              "status": "fixed",
+              "timestamp": "2026-11-05T07:54:08Z",
+              "fixed_advisories": [
+                "CVE-2026-34479",
+                "CVE-2026-34480",
+                "GHSA-h383-gmxw-35v2"
+              ],
+              "aliases": [
+                "CVE-2026-34479",
+                "GHSA-3pxv-7cmr-fjr4",
+                "GHSA-h383-gmxw-35v2"
+              ],
+              "fixed_cves": [
+                "CVE-2026-34479",
                 "CVE-2026-34480"
               ]
             },
@@ -794,6 +829,29 @@
               ]
             },
             {
+              "purl": "pkg:maven/org.apache.logging.log4j/log4j-core@2.17.2.1-osera-00005",
+              "version": "2.17.2.1-osera-00005",
+              "base_version": "2.17.2.1",
+              "osera_sequence": 5,
+              "supplier": "moderne",
+              "status": "fixed",
+              "timestamp": "2026-11-05T07:54:08Z",
+              "fixed_advisories": [
+                "CVE-2026-34479",
+                "CVE-2026-34480",
+                "GHSA-h383-gmxw-35v2"
+              ],
+              "aliases": [
+                "CVE-2026-34479",
+                "GHSA-3pxv-7cmr-fjr4",
+                "GHSA-h383-gmxw-35v2"
+              ],
+              "fixed_cves": [
+                "CVE-2026-34479",
+                "CVE-2026-34480"
+              ]
+            },
+            {
               "purl": "pkg:maven/org.apache.logging.log4j/log4j-core@2.17.2.1-osera-00004",
               "version": "2.17.2.1-osera-00004",
               "base_version": "2.17.2.1",
@@ -889,9 +947,10 @@
           ],
           "scope_note": "Authoritative OSERA OpenVEX published patch versions and fixed advisories. Absence from this feed means no published OSERA fix was found, not zero vulnerabilities. Version-specific OpenVEX statements apply only to the exact PURL version and remain distinct from package-wide OSV advisories.",
           "api": {
-            "cache": "hit",
+            "cache": "miss",
             "url": "https://feed.finos.org/openvex.json",
-            "retrieved_at": "2026-11-04T02:38:45Z"
+            "status": 200,
+            "retrieved_at": "2026-11-05T10:50:01Z"
           }
         }
       },
@@ -930,12 +989,12 @@
         "homepage": "https://github.com/FasterXML/jackson"
       },
       "scores": {
-        "project_vitality": 91.9,
+        "project_vitality": 91.7,
         "security_health": 66.7,
-        "sustainability_governance": 66.4,
-        "dependency_hygiene": 99.4,
-        "ecosystem_resilience": 85.1,
-        "ecosystem_criticality": 77.6,
+        "sustainability_governance": 66.7,
+        "dependency_hygiene": 99.3,
+        "ecosystem_resilience": 85.3,
+        "ecosystem_criticality": 77.7,
         "confidence": 0.91,
         "oss_vitality": 80.6,
         "enterprise_priority_risk": 17.1,
@@ -945,7 +1004,7 @@
         "openssf_scorecard": {
           "source": "openssf-scorecard-api",
           "url": "https://api.scorecard.dev/projects/github.com/FasterXML/jackson-databind",
-          "observed_at": "2026-11-04T02:58:02Z",
+          "observed_at": "2026-11-05T10:54:42Z",
           "confidence": 0.95,
           "score": 8.1,
           "scorecard_version": "v5.6.0",
@@ -1037,9 +1096,10 @@
             }
           ],
           "api": {
-            "cache": "hit",
+            "cache": "miss",
             "url": "https://api.scorecard.dev/projects/github.com/FasterXML/jackson-databind",
-            "retrieved_at": "2026-11-04T02:58:02Z"
+            "status": 200,
+            "retrieved_at": "2026-11-05T10:54:42Z"
           }
         },
         "openssf_criticality": {
@@ -1049,19 +1109,19 @@
         },
         "chaoss_derived": {
           "source": "github-api-derived",
-          "observed_at": "2026-11-04T02:57:15Z",
+          "observed_at": "2026-11-05T10:54:28Z",
           "confidence": 0.765,
-          "active_contributors_365d": 28,
-          "active_contributors_180d": 28,
+          "active_contributors_365d": 29,
+          "active_contributors_180d": 29,
           "active_contributors_90d": 26,
           "active_contributors_30d": 13,
           "commits_365d": 1000,
           "commits_180d": 1000,
-          "commits_90d": 648,
-          "commits_30d": 214,
-          "issues_opened_365d": 107,
-          "issues_closed_365d": 68,
-          "issue_closure_ratio_365d": 0.636,
+          "commits_90d": 622,
+          "commits_30d": 207,
+          "issues_opened_365d": 0,
+          "issues_closed_365d": 0,
+          "issue_closure_ratio_365d": null,
           "closed_pr_sample": 300,
           "merged_pr_sample": 257,
           "pr_merge_ratio": 0.857,
@@ -1071,7 +1131,7 @@
         "osv": {
           "source": "osv-query-api",
           "url": "https://api.osv.dev/v1/query",
-          "observed_at": "2026-11-04T02:58:07Z",
+          "observed_at": "2026-11-05T10:54:43Z",
           "confidence": 0.9,
           "query": {
             "package": {
@@ -1944,71 +2004,84 @@
             }
           ],
           "api": {
-            "cache": "hit",
+            "cache": "miss",
             "url": "https://api.osv.dev/v1/query",
-            "retrieved_at": "2026-11-04T02:58:07Z"
+            "status": 200,
+            "retrieved_at": "2026-11-05T10:54:43Z"
           }
         },
         "github": {
           "source": "github-api",
           "url": "https://api.github.com/repos/FasterXML/jackson-databind",
-          "observed_at": "2026-11-04T02:57:15Z",
+          "observed_at": "2026-11-05T10:54:28Z",
           "confidence": 0.9,
-          "stars": 3755,
-          "forks": 1551,
-          "open_issues": 168,
+          "stars": 3756,
+          "forks": 1553,
+          "open_issues": 169,
           "created_at": "2011-12-23T07:17:41Z",
-          "pushed_at": "2026-11-03T23:30:51Z",
+          "pushed_at": "2026-11-05T03:18:21Z",
           "default_branch": "3.x",
           "latest_release": "jackson-databind-3.2.4",
           "latest_release_at": "",
           "commits_365d": 1000,
           "commits_180d": 1000,
-          "commits_90d": 648,
-          "commits_30d": 214,
-          "active_contributors_365d": 28,
-          "active_contributors_180d": 28,
+          "commits_90d": 622,
+          "commits_30d": 207,
+          "active_contributors_365d": 29,
+          "active_contributors_180d": 29,
           "active_contributors_90d": 26,
           "active_contributors_30d": 13,
-          "issues_opened_365d": 107,
-          "issues_closed_365d": 68,
-          "issue_closure_ratio_365d": 0.636,
+          "issues_opened_365d": 0,
+          "issues_closed_365d": 0,
+          "issue_closure_ratio_365d": null,
           "closed_pr_sample": 300,
           "merged_pr_sample": 257,
           "pr_merge_ratio": 0.857,
           "median_pr_merge_days": 0.27,
           "commit_sample_truncated": true,
           "repo_api": {
-            "cache": "hit",
+            "cache": "miss",
             "url": "https://api.github.com/repos/FasterXML/jackson-databind",
-            "retrieved_at": "2026-11-04T02:57:15Z"
+            "status": 200,
+            "retrieved_at": "2026-11-05T10:54:28Z"
           },
           "release_api": {
-            "cache": "hit",
+            "cache": "miss",
             "url": "https://api.github.com/repos/FasterXML/jackson-databind/releases?per_page=100&page=1",
-            "retrieved_at": "2026-11-04T02:57:17Z"
+            "status": 200,
+            "retrieved_at": "2026-11-05T10:54:28Z"
           },
           "commit_api": {
             "cache": "miss",
-            "url": "https://api.github.com/repos/FasterXML/jackson-databind/commits?since=2025-11-04T03:07:56Z&per_page=100&page=1",
+            "url": "https://api.github.com/repos/FasterXML/jackson-databind/commits?since=2025-11-05T10:49:48Z&per_page=100&page=1",
             "status": 200,
-            "retrieved_at": "2026-11-04T03:08:01Z"
+            "retrieved_at": "2026-11-05T10:54:29Z",
+            "pages_fetched": 10
           },
           "issue_api": {
             "cache": "miss",
-            "url": "https://api.github.com/repos/FasterXML/jackson-databind/issues?state=all&since=2025-11-04T03:07:56Z&per_page=100&page=1",
+            "url": "https://api.github.com/repos/FasterXML/jackson-databind/issues?state=all&since=2025-11-05T10:49:48Z&per_page=100&page=1",
             "status": 200,
-            "retrieved_at": "2026-11-04T03:08:08Z"
+            "retrieved_at": "2026-11-05T10:54:36Z",
+            "pages_fetched": 3
           },
           "pull_api": {
-            "cache": "hit",
+            "cache": "miss",
             "url": "https://api.github.com/repos/FasterXML/jackson-databind/pulls?state=closed&per_page=100&page=1",
-            "retrieved_at": "2026-11-04T02:57:56Z"
+            "status": 200,
+            "retrieved_at": "2026-11-05T10:54:39Z",
+            "pages_fetched": 3
+          },
+          "tag_api": {
+            "cache": "miss",
+            "url": "https://api.github.com/repos/FasterXML/jackson-databind/tags?per_page=100&page=1",
+            "status": 200,
+            "retrieved_at": "2026-11-05T10:54:29Z"
           }
         },
         "package_registry": {
           "source": "combined-registry-evidence",
-          "observed_at": "2026-11-04T02:58:03Z",
+          "observed_at": "2026-11-05T10:54:42Z",
           "confidence": 0.9,
           "url": "https://api.deps.dev/v3/systems/MAVEN/packages/com.fasterxml.jackson.core%3Ajackson-databind",
           "system": "MAVEN",
@@ -2017,48 +2090,51 @@
           "latest_published_at": "2026-10-17T23:15:56Z",
           "latest_is_default": true,
           "deprecated_version_count": 0,
-          "dependent_count": 5261,
-          "direct_dependent_count": 1500,
-          "indirect_dependent_count": 3821,
+          "dependent_count": 5507,
+          "direct_dependent_count": 1551,
+          "indirect_dependent_count": 4016,
           "package_api": {
-            "cache": "hit",
+            "cache": "miss",
             "url": "https://api.deps.dev/v3/systems/MAVEN/packages/com.fasterxml.jackson.core%3Ajackson-databind",
-            "retrieved_at": "2026-11-04T02:58:03Z"
+            "status": 200,
+            "retrieved_at": "2026-11-05T10:54:42Z"
           },
           "dependents_api": {
-            "cache": "hit",
+            "cache": "miss",
             "url": "https://api.deps.dev/v3alpha/systems/MAVEN/packages/com.fasterxml.jackson.core%3Ajackson-databind/versions/2.22.4:dependents",
-            "retrieved_at": "2026-11-04T02:58:03Z"
+            "status": 200,
+            "retrieved_at": "2026-11-05T10:54:42Z"
           }
         },
         "cisa_kev": {
           "source": "cisa-kev-json",
           "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
-          "observed_at": "2026-11-04T02:38:44Z",
-          "catalog_version": "2026.11.03",
-          "catalog_date_released": "2026-11-03T20:00:24.8741Z",
+          "observed_at": "2026-11-05T10:50:00Z",
+          "catalog_version": "2026.11.04",
+          "catalog_date_released": "2026-11-04T20:00:05.774Z",
           "confidence": 0.95,
-          "catalog_count": 1767,
+          "catalog_count": 1768,
           "matched_count": 0,
           "matched_cves": [],
           "matches": [],
           "api": {
-            "cache": "hit",
+            "cache": "miss",
             "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
-            "retrieved_at": "2026-11-04T02:38:44Z"
+            "status": 200,
+            "retrieved_at": "2026-11-05T10:50:00Z"
           }
         },
         "osera_openvex": {
           "source": "osera-openvex-feed",
           "url": "https://feed.finos.org/openvex.json",
           "feed_id": "https://feed.finos.org/openvex.json",
-          "feed_version": 161,
-          "feed_last_updated": "2026-11-02T15:22:11Z",
-          "retrieved_at": "2026-11-04T02:38:45Z",
-          "observed_at": "2026-11-04T02:38:45Z",
+          "feed_version": 193,
+          "feed_last_updated": "2026-11-05T10:46:14Z",
+          "retrieved_at": "2026-11-05T10:50:01Z",
+          "observed_at": "2026-11-05T10:50:01Z",
           "confidence": 0.95,
           "coverage_status": "covered",
-          "published_patch_count": 43,
+          "published_patch_count": 44,
           "published_versions": [
             "2.19.4.1-osera-00021",
             "2.19.4.1-osera-00020",
@@ -2092,6 +2168,7 @@
             "2.15.4.1-osera-00006",
             "2.15.4.1-osera-00005",
             "2.15.4.1-osera-00004",
+            "2.13.5.1-osera-00015",
             "2.13.5.1-osera-00014",
             "2.13.5.1-osera-00013",
             "2.13.5.1-osera-00012",
@@ -2143,9 +2220,9 @@
             "CVE-2026-91776",
             "CVE-2026-91777"
           ],
-          "raw_statement_count": 328,
-          "deduplicated_statement_count": 328,
-          "statement_count": 328,
+          "raw_statement_count": 337,
+          "deduplicated_statement_count": 337,
+          "statement_count": 337,
           "patches": [
             {
               "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.19.4.1-osera-00021",
@@ -3435,6 +3512,48 @@
               ],
               "fixed_cves": [
                 "CVE-2026-54513"
+              ]
+            },
+            {
+              "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.13.5.1-osera-00015",
+              "version": "2.13.5.1-osera-00015",
+              "base_version": "2.13.5.1",
+              "osera_sequence": 15,
+              "supplier": "moderne",
+              "status": "fixed",
+              "timestamp": "2026-11-05T07:36:39Z",
+              "fixed_advisories": [
+                "CVE-2026-50193",
+                "CVE-2026-54512",
+                "CVE-2026-54513",
+                "CVE-2026-54514",
+                "CVE-2026-54515",
+                "CVE-2026-59889",
+                "CVE-2026-68497",
+                "CVE-2026-91776",
+                "CVE-2026-91777"
+              ],
+              "aliases": [
+                "GHSA-3wrr-7qpf-2prh",
+                "GHSA-5gvw-p9qm-jgwh",
+                "GHSA-5jmj-h7xm-6q6v",
+                "GHSA-cxp5-3px4-pw24",
+                "GHSA-hgj6-7826-r7m5",
+                "GHSA-j3rv-43j4-c7qm",
+                "GHSA-q4xh-88c3-wmh7",
+                "GHSA-rmj7-2vxq-3g9f",
+                "GHSA-wv8q-qhhj-9h54"
+              ],
+              "fixed_cves": [
+                "CVE-2026-50193",
+                "CVE-2026-54512",
+                "CVE-2026-54513",
+                "CVE-2026-54514",
+                "CVE-2026-54515",
+                "CVE-2026-59889",
+                "CVE-2026-68497",
+                "CVE-2026-91776",
+                "CVE-2026-91777"
               ]
             },
             {
@@ -5069,6 +5188,48 @@
               ]
             },
             {
+              "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.13.5.1-osera-00015",
+              "version": "2.13.5.1-osera-00015",
+              "base_version": "2.13.5.1",
+              "osera_sequence": 15,
+              "supplier": "moderne",
+              "status": "fixed",
+              "timestamp": "2026-11-05T07:36:39Z",
+              "fixed_advisories": [
+                "CVE-2026-50193",
+                "CVE-2026-54512",
+                "CVE-2026-54513",
+                "CVE-2026-54514",
+                "CVE-2026-54515",
+                "CVE-2026-59889",
+                "CVE-2026-68497",
+                "CVE-2026-91776",
+                "CVE-2026-91777"
+              ],
+              "aliases": [
+                "GHSA-3wrr-7qpf-2prh",
+                "GHSA-5gvw-p9qm-jgwh",
+                "GHSA-5jmj-h7xm-6q6v",
+                "GHSA-cxp5-3px4-pw24",
+                "GHSA-hgj6-7826-r7m5",
+                "GHSA-j3rv-43j4-c7qm",
+                "GHSA-q4xh-88c3-wmh7",
+                "GHSA-rmj7-2vxq-3g9f",
+                "GHSA-wv8q-qhhj-9h54"
+              ],
+              "fixed_cves": [
+                "CVE-2026-50193",
+                "CVE-2026-54512",
+                "CVE-2026-54513",
+                "CVE-2026-54514",
+                "CVE-2026-54515",
+                "CVE-2026-59889",
+                "CVE-2026-68497",
+                "CVE-2026-91776",
+                "CVE-2026-91777"
+              ]
+            },
+            {
               "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.13.5.1-osera-00014",
               "version": "2.13.5.1-osera-00014",
               "base_version": "2.13.5.1",
@@ -5420,9 +5581,10 @@
           ],
           "scope_note": "Authoritative OSERA OpenVEX published patch versions and fixed advisories. Absence from this feed means no published OSERA fix was found, not zero vulnerabilities. Version-specific OpenVEX statements apply only to the exact PURL version and remain distinct from package-wide OSV advisories.",
           "api": {
-            "cache": "hit",
+            "cache": "miss",
             "url": "https://feed.finos.org/openvex.json",
-            "retrieved_at": "2026-11-04T02:38:45Z"
+            "status": 200,
+            "retrieved_at": "2026-11-05T10:50:01Z"
           }
         }
       },
@@ -5461,78 +5623,84 @@
         "homepage": "https://spring.io/projects/spring-framework"
       },
       "scores": {
-        "project_vitality": 100.0,
+        "project_vitality": 99.8,
         "security_health": 50.0,
         "sustainability_governance": 69.4,
-        "dependency_hygiene": 83.1,
+        "dependency_hygiene": 83.0,
         "ecosystem_resilience": 93.1,
         "ecosystem_criticality": 79.4,
         "confidence": 0.91,
-        "oss_vitality": 77.8,
-        "enterprise_priority_risk": 22.4,
+        "oss_vitality": 77.7,
+        "enterprise_priority_risk": 22.5,
         "undermaintenance_pressure": 1.63
       },
       "evidence": {
         "github": {
           "source": "github-api",
           "url": "https://api.github.com/repos/spring-projects/spring-framework",
-          "observed_at": "2026-11-04T03:04:27Z",
+          "observed_at": "2026-11-05T10:58:09Z",
           "confidence": 0.9,
-          "stars": 60313,
-          "forks": 38759,
+          "stars": 60315,
+          "forks": 38762,
           "open_issues": 482,
           "created_at": "2010-12-08T04:04:45Z",
-          "pushed_at": "2026-11-03T17:22:46Z",
+          "pushed_at": "2026-11-05T10:31:31Z",
           "default_branch": "main",
           "latest_release": "v7.1.0-RC1",
           "latest_release_at": "2026-10-22T19:53:26Z",
           "commits_365d": 999,
-          "commits_180d": 945,
-          "commits_90d": 590,
-          "commits_30d": 251,
-          "active_contributors_365d": 91,
-          "active_contributors_180d": 78,
+          "commits_180d": 963,
+          "commits_90d": 607,
+          "commits_30d": 249,
+          "active_contributors_365d": 89,
+          "active_contributors_180d": 75,
           "active_contributors_90d": 49,
-          "active_contributors_30d": 26,
-          "issues_opened_365d": 123,
-          "issues_closed_365d": 80,
-          "issue_closure_ratio_365d": 0.65,
+          "active_contributors_30d": 25,
+          "issues_opened_365d": 0,
+          "issues_closed_365d": 0,
+          "issue_closure_ratio_365d": null,
           "closed_pr_sample": 300,
           "merged_pr_sample": 127,
           "pr_merge_ratio": 0.423,
           "median_pr_merge_days": 3.06,
           "commit_sample_truncated": true,
           "repo_api": {
-            "cache": "hit",
+            "cache": "miss",
             "url": "https://api.github.com/repos/spring-projects/spring-framework",
-            "retrieved_at": "2026-11-04T03:04:27Z"
+            "status": 200,
+            "retrieved_at": "2026-11-05T10:58:09Z"
           },
           "release_api": {
-            "cache": "hit",
+            "cache": "miss",
             "url": "https://api.github.com/repos/spring-projects/spring-framework/releases?per_page=100&page=1",
-            "retrieved_at": "2026-11-04T03:04:28Z"
+            "status": 200,
+            "retrieved_at": "2026-11-05T10:58:10Z"
           },
           "commit_api": {
             "cache": "miss",
-            "url": "https://api.github.com/repos/spring-projects/spring-framework/commits?since=2025-11-04T03:07:56Z&per_page=100&page=1",
+            "url": "https://api.github.com/repos/spring-projects/spring-framework/commits?since=2025-11-05T10:49:48Z&per_page=100&page=1",
             "status": 200,
-            "retrieved_at": "2026-11-04T03:08:11Z"
+            "retrieved_at": "2026-11-05T10:58:11Z",
+            "pages_fetched": 10
           },
           "issue_api": {
             "cache": "miss",
-            "url": "https://api.github.com/repos/spring-projects/spring-framework/issues?state=all&since=2025-11-04T03:07:56Z&per_page=100&page=1",
+            "url": "https://api.github.com/repos/spring-projects/spring-framework/issues?state=all&since=2025-11-05T10:49:48Z&per_page=100&page=1",
             "status": 200,
-            "retrieved_at": "2026-11-04T03:08:18Z"
+            "retrieved_at": "2026-11-05T10:58:19Z",
+            "pages_fetched": 3
           },
           "pull_api": {
-            "cache": "hit",
+            "cache": "miss",
             "url": "https://api.github.com/repos/spring-projects/spring-framework/pulls?state=closed&per_page=100&page=1",
-            "retrieved_at": "2026-11-04T03:04:41Z"
+            "status": 200,
+            "retrieved_at": "2026-11-05T10:58:22Z",
+            "pages_fetched": 3
           }
         },
         "package_registry": {
           "source": "combined-registry-evidence",
-          "observed_at": "2026-11-04T03:04:45Z",
+          "observed_at": "2026-11-05T10:58:26Z",
           "confidence": 0.9,
           "url": "https://api.deps.dev/v3/systems/MAVEN/packages/org.springframework%3Aspring-core",
           "system": "MAVEN",
@@ -5541,24 +5709,26 @@
           "latest_published_at": "2026-10-22T07:46:54Z",
           "latest_is_default": true,
           "deprecated_version_count": 0,
-          "dependent_count": 2029,
+          "dependent_count": 2034,
           "direct_dependent_count": 676,
-          "indirect_dependent_count": 1365,
+          "indirect_dependent_count": 1370,
           "package_api": {
-            "cache": "hit",
+            "cache": "miss",
             "url": "https://api.deps.dev/v3/systems/MAVEN/packages/org.springframework%3Aspring-core",
-            "retrieved_at": "2026-11-04T03:04:45Z"
+            "status": 200,
+            "retrieved_at": "2026-11-05T10:58:26Z"
           },
           "dependents_api": {
-            "cache": "hit",
+            "cache": "miss",
             "url": "https://api.deps.dev/v3alpha/systems/MAVEN/packages/org.springframework%3Aspring-core/versions/7.1.0-RC1:dependents",
-            "retrieved_at": "2026-11-04T03:04:45Z"
+            "status": 200,
+            "retrieved_at": "2026-11-05T10:58:26Z"
           }
         },
         "openssf_scorecard": {
           "source": "openssf-scorecard-api",
           "url": "https://api.scorecard.dev/projects/github.com/spring-projects/spring-framework",
-          "observed_at": "2026-11-04T03:04:45Z",
+          "observed_at": "2026-11-05T10:58:26Z",
           "confidence": 0.95,
           "score": 6.2,
           "scorecard_version": "v5.6.0",
@@ -5650,15 +5820,16 @@
             }
           ],
           "api": {
-            "cache": "hit",
+            "cache": "miss",
             "url": "https://api.scorecard.dev/projects/github.com/spring-projects/spring-framework",
-            "retrieved_at": "2026-11-04T03:04:45Z"
+            "status": 200,
+            "retrieved_at": "2026-11-05T10:58:26Z"
           }
         },
         "osv": {
           "source": "osv-query-api",
           "url": "https://api.osv.dev/v1/query",
-          "observed_at": "2026-11-04T03:04:45Z",
+          "observed_at": "2026-11-05T10:58:27Z",
           "confidence": 0.9,
           "query": {
             "package": {
@@ -5863,9 +6034,10 @@
             }
           ],
           "api": {
-            "cache": "hit",
+            "cache": "miss",
             "url": "https://api.osv.dev/v1/query",
-            "retrieved_at": "2026-11-04T03:04:45Z"
+            "status": 200,
+            "retrieved_at": "2026-11-05T10:58:27Z"
           }
         },
         "openssf_criticality": {
@@ -5875,19 +6047,19 @@
         },
         "chaoss_derived": {
           "source": "github-api-derived",
-          "observed_at": "2026-11-04T03:04:27Z",
+          "observed_at": "2026-11-05T10:58:09Z",
           "confidence": 0.765,
-          "active_contributors_365d": 91,
-          "active_contributors_180d": 78,
+          "active_contributors_365d": 89,
+          "active_contributors_180d": 75,
           "active_contributors_90d": 49,
-          "active_contributors_30d": 26,
+          "active_contributors_30d": 25,
           "commits_365d": 999,
-          "commits_180d": 945,
-          "commits_90d": 590,
-          "commits_30d": 251,
-          "issues_opened_365d": 123,
-          "issues_closed_365d": 80,
-          "issue_closure_ratio_365d": 0.65,
+          "commits_180d": 963,
+          "commits_90d": 607,
+          "commits_30d": 249,
+          "issues_opened_365d": 0,
+          "issues_closed_365d": 0,
+          "issue_closure_ratio_365d": null,
           "closed_pr_sample": 300,
           "merged_pr_sample": 127,
           "pr_merge_ratio": 0.423,
@@ -5897,32 +6069,34 @@
         "cisa_kev": {
           "source": "cisa-kev-json",
           "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
-          "observed_at": "2026-11-04T02:38:44Z",
-          "catalog_version": "2026.11.03",
-          "catalog_date_released": "2026-11-03T20:00:24.8741Z",
+          "observed_at": "2026-11-05T10:50:00Z",
+          "catalog_version": "2026.11.04",
+          "catalog_date_released": "2026-11-04T20:00:05.774Z",
           "confidence": 0.95,
-          "catalog_count": 1767,
+          "catalog_count": 1768,
           "matched_count": 0,
           "matched_cves": [],
           "matches": [],
           "api": {
-            "cache": "hit",
+            "cache": "miss",
             "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
-            "retrieved_at": "2026-11-04T02:38:44Z"
+            "status": 200,
+            "retrieved_at": "2026-11-05T10:50:00Z"
           }
         },
         "osera_openvex": {
           "source": "osera-openvex-feed",
           "url": "https://feed.finos.org/openvex.json",
           "feed_id": "https://feed.finos.org/openvex.json",
-          "feed_version": 161,
-          "feed_last_updated": "2026-11-02T15:22:11Z",
-          "retrieved_at": "2026-11-04T02:38:45Z",
-          "observed_at": "2026-11-04T02:38:45Z",
+          "feed_version": 193,
+          "feed_last_updated": "2026-11-05T10:46:14Z",
+          "retrieved_at": "2026-11-05T10:50:01Z",
+          "observed_at": "2026-11-05T10:50:01Z",
           "confidence": 0.95,
           "coverage_status": "covered",
-          "published_patch_count": 21,
+          "published_patch_count": 22,
           "published_versions": [
+            "5.3.39.1-osera-00025",
             "5.3.39.1-osera-00024",
             "5.3.39.1-osera-00023",
             "5.3.39.1-osera-00022",
@@ -5945,7 +6119,7 @@
             "5.3.39.1-osera-00005",
             "5.3.39.1-osera-00004"
           ],
-          "latest_published_version": "5.3.39.1-osera-00024",
+          "latest_published_version": "5.3.39.1-osera-00025",
           "fixed_advisory_count": 2,
           "fixed_advisories": [
             "CVE-2025-41249",
@@ -5956,10 +6130,30 @@
             "CVE-2025-41249",
             "CVE-2026-41848"
           ],
-          "raw_statement_count": 36,
-          "deduplicated_statement_count": 36,
-          "statement_count": 36,
+          "raw_statement_count": 38,
+          "deduplicated_statement_count": 38,
+          "statement_count": 38,
           "patches": [
+            {
+              "purl": "pkg:maven/org.springframework/spring-core@5.3.39.1-osera-00025",
+              "version": "5.3.39.1-osera-00025",
+              "base_version": "5.3.39.1",
+              "osera_sequence": 25,
+              "supplier": "moderne",
+              "status": "fixed",
+              "timestamp": "2026-11-05T07:58:57Z",
+              "fixed_advisories": [
+                "CVE-2025-41249",
+                "CVE-2026-41848"
+              ],
+              "aliases": [
+                "GHSA-jmp9-x22r-554x"
+              ],
+              "fixed_cves": [
+                "CVE-2025-41249",
+                "CVE-2026-41848"
+              ]
+            },
             {
               "purl": "pkg:maven/org.springframework/spring-core@5.3.39.1-osera-00024",
               "version": "5.3.39.1-osera-00024",
@@ -6364,6 +6558,26 @@
             }
           ],
           "published_patches": [
+            {
+              "purl": "pkg:maven/org.springframework/spring-core@5.3.39.1-osera-00025",
+              "version": "5.3.39.1-osera-00025",
+              "base_version": "5.3.39.1",
+              "osera_sequence": 25,
+              "supplier": "moderne",
+              "status": "fixed",
+              "timestamp": "2026-11-05T07:58:57Z",
+              "fixed_advisories": [
+                "CVE-2025-41249",
+                "CVE-2026-41848"
+              ],
+              "aliases": [
+                "GHSA-jmp9-x22r-554x"
+              ],
+              "fixed_cves": [
+                "CVE-2025-41249",
+                "CVE-2026-41848"
+              ]
+            },
             {
               "purl": "pkg:maven/org.springframework/spring-core@5.3.39.1-osera-00024",
               "version": "5.3.39.1-osera-00024",
@@ -6787,9 +7001,10 @@
           ],
           "scope_note": "Authoritative OSERA OpenVEX published patch versions and fixed advisories. Absence from this feed means no published OSERA fix was found, not zero vulnerabilities. Version-specific OpenVEX statements apply only to the exact PURL version and remain distinct from package-wide OSV advisories.",
           "api": {
-            "cache": "hit",
+            "cache": "miss",
             "url": "https://feed.finos.org/openvex.json",
-            "retrieved_at": "2026-11-04T02:38:45Z"
+            "status": 200,
+            "retrieved_at": "2026-11-05T10:50:01Z"
           }
         }
       },
@@ -6839,75 +7054,81 @@
         "project_vitality": 100.0,
         "security_health": 48.8,
         "sustainability_governance": 67.6,
-        "dependency_hygiene": 77.6,
+        "dependency_hygiene": 77.5,
         "ecosystem_resilience": 92.0,
         "ecosystem_criticality": 77.9,
         "confidence": 0.91,
-        "oss_vitality": 76.2,
-        "enterprise_priority_risk": 23.9,
-        "undermaintenance_pressure": 1.68
+        "oss_vitality": 76.1,
+        "enterprise_priority_risk": 24.0,
+        "undermaintenance_pressure": 1.69
       },
       "evidence": {
         "github": {
           "source": "github-api",
           "url": "https://api.github.com/repos/spring-projects/spring-boot",
-          "observed_at": "2026-11-04T03:03:16Z",
+          "observed_at": "2026-11-05T10:57:10Z",
           "confidence": 0.9,
-          "stars": 81733,
-          "forks": 43459,
-          "open_issues": 482,
+          "stars": 81740,
+          "forks": 43445,
+          "open_issues": 478,
           "created_at": "2012-10-19T15:02:57Z",
-          "pushed_at": "2026-11-03T22:12:33Z",
+          "pushed_at": "2026-11-04T21:20:49Z",
           "default_branch": "main",
           "latest_release": "v4.2.0-RC1",
           "latest_release_at": "2026-10-22T17:04:34Z",
           "commits_365d": 1000,
           "commits_180d": 999,
-          "commits_90d": 995,
-          "commits_30d": 842,
-          "active_contributors_365d": 52,
-          "active_contributors_180d": 52,
+          "commits_90d": 998,
+          "commits_30d": 874,
+          "active_contributors_365d": 51,
+          "active_contributors_180d": 51,
           "active_contributors_90d": 50,
           "active_contributors_30d": 37,
-          "issues_opened_365d": 204,
-          "issues_closed_365d": 190,
-          "issue_closure_ratio_365d": 0.931,
+          "issues_opened_365d": 0,
+          "issues_closed_365d": 0,
+          "issue_closure_ratio_365d": null,
           "closed_pr_sample": 300,
-          "merged_pr_sample": 195,
-          "pr_merge_ratio": 0.65,
-          "median_pr_merge_days": 1.95,
+          "merged_pr_sample": 191,
+          "pr_merge_ratio": 0.637,
+          "median_pr_merge_days": 1.98,
           "commit_sample_truncated": true,
           "repo_api": {
-            "cache": "hit",
+            "cache": "miss",
             "url": "https://api.github.com/repos/spring-projects/spring-boot",
-            "retrieved_at": "2026-11-04T03:03:16Z"
+            "status": 200,
+            "retrieved_at": "2026-11-05T10:57:10Z"
           },
           "release_api": {
-            "cache": "hit",
+            "cache": "miss",
             "url": "https://api.github.com/repos/spring-projects/spring-boot/releases?per_page=100&page=1",
-            "retrieved_at": "2026-11-04T03:03:17Z"
+            "status": 200,
+            "retrieved_at": "2026-11-05T10:57:10Z"
           },
           "commit_api": {
             "cache": "miss",
-            "url": "https://api.github.com/repos/spring-projects/spring-boot/commits?since=2025-11-04T03:07:56Z&per_page=100&page=1",
+            "url": "https://api.github.com/repos/spring-projects/spring-boot/commits?since=2025-11-05T10:49:48Z&per_page=100&page=1",
             "status": 200,
-            "retrieved_at": "2026-11-04T03:08:21Z"
+            "retrieved_at": "2026-11-05T10:57:11Z",
+            "pages_fetched": 10
           },
           "issue_api": {
             "cache": "miss",
-            "url": "https://api.github.com/repos/spring-projects/spring-boot/issues?state=all&since=2025-11-04T03:07:56Z&per_page=100&page=1",
+            "url": "https://api.github.com/repos/spring-projects/spring-boot/issues?state=all&since=2025-11-05T10:49:48Z&per_page=100&page=1",
             "status": 200,
-            "retrieved_at": "2026-11-04T03:08:27Z"
+            "retrieved_at": "2026-11-05T10:57:17Z",
+            "pages_fetched": 3
           },
           "pull_api": {
-            "cache": "hit",
+            "cache": "miss",
             "url": "https://api.github.com/repos/spring-projects/spring-boot/pulls?state=closed&per_page=100&page=1",
-            "retrieved_at": "2026-11-04T03:03:30Z"
+            "status": 200,
+            "retrieved_at": "2026-11-05T10:57:21Z",
+            "pages_fetched": 3
           }
         },
         "package_registry": {
           "source": "combined-registry-evidence",
-          "observed_at": "2026-11-04T03:03:33Z",
+          "observed_at": "2026-11-05T10:57:24Z",
           "confidence": 0.9,
           "url": "https://api.deps.dev/v3/systems/MAVEN/packages/org.springframework.boot%3Aspring-boot",
           "system": "MAVEN",
@@ -6916,24 +7137,26 @@
           "latest_published_at": "2026-10-22T12:04:04Z",
           "latest_is_default": true,
           "deprecated_version_count": 0,
-          "dependent_count": 1402,
+          "dependent_count": 1407,
           "direct_dependent_count": 642,
-          "indirect_dependent_count": 850,
+          "indirect_dependent_count": 855,
           "package_api": {
-            "cache": "hit",
+            "cache": "miss",
             "url": "https://api.deps.dev/v3/systems/MAVEN/packages/org.springframework.boot%3Aspring-boot",
-            "retrieved_at": "2026-11-04T03:03:33Z"
+            "status": 200,
+            "retrieved_at": "2026-11-05T10:57:24Z"
           },
           "dependents_api": {
-            "cache": "hit",
+            "cache": "miss",
             "url": "https://api.deps.dev/v3alpha/systems/MAVEN/packages/org.springframework.boot%3Aspring-boot/versions/4.2.0-RC1:dependents",
-            "retrieved_at": "2026-11-04T03:03:34Z"
+            "status": 200,
+            "retrieved_at": "2026-11-05T10:57:24Z"
           }
         },
         "openssf_scorecard": {
           "source": "openssf-scorecard-api",
           "url": "https://api.scorecard.dev/projects/github.com/spring-projects/spring-boot",
-          "observed_at": "2026-11-04T03:03:33Z",
+          "observed_at": "2026-11-05T10:57:24Z",
           "confidence": 0.95,
           "score": 5.6,
           "scorecard_version": "v5.6.0",
@@ -7025,15 +7248,16 @@
             }
           ],
           "api": {
-            "cache": "hit",
+            "cache": "miss",
             "url": "https://api.scorecard.dev/projects/github.com/spring-projects/spring-boot",
-            "retrieved_at": "2026-11-04T03:03:33Z"
+            "status": 200,
+            "retrieved_at": "2026-11-05T10:57:24Z"
           }
         },
         "osv": {
           "source": "osv-query-api",
           "url": "https://api.osv.dev/v1/query",
-          "observed_at": "2026-11-04T03:03:34Z",
+          "observed_at": "2026-11-05T10:57:25Z",
           "confidence": 0.9,
           "query": {
             "package": {
@@ -7098,9 +7322,10 @@
             }
           ],
           "api": {
-            "cache": "hit",
+            "cache": "miss",
             "url": "https://api.osv.dev/v1/query",
-            "retrieved_at": "2026-11-04T03:03:34Z"
+            "status": 200,
+            "retrieved_at": "2026-11-05T10:57:25Z"
           }
         },
         "openssf_criticality": {
@@ -7110,54 +7335,62 @@
         },
         "chaoss_derived": {
           "source": "github-api-derived",
-          "observed_at": "2026-11-04T03:03:16Z",
+          "observed_at": "2026-11-05T10:57:10Z",
           "confidence": 0.765,
-          "active_contributors_365d": 52,
-          "active_contributors_180d": 52,
+          "active_contributors_365d": 51,
+          "active_contributors_180d": 51,
           "active_contributors_90d": 50,
           "active_contributors_30d": 37,
           "commits_365d": 1000,
           "commits_180d": 999,
-          "commits_90d": 995,
-          "commits_30d": 842,
-          "issues_opened_365d": 204,
-          "issues_closed_365d": 190,
-          "issue_closure_ratio_365d": 0.931,
+          "commits_90d": 998,
+          "commits_30d": 874,
+          "issues_opened_365d": 0,
+          "issues_closed_365d": 0,
+          "issue_closure_ratio_365d": null,
           "closed_pr_sample": 300,
-          "merged_pr_sample": 195,
-          "pr_merge_ratio": 0.65,
-          "median_pr_merge_days": 1.95,
+          "merged_pr_sample": 191,
+          "pr_merge_ratio": 0.637,
+          "median_pr_merge_days": 1.98,
           "commit_sample_truncated": true
         },
         "cisa_kev": {
           "source": "cisa-kev-json",
           "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
-          "observed_at": "2026-11-04T02:38:44Z",
-          "catalog_version": "2026.11.03",
-          "catalog_date_released": "2026-11-03T20:00:24.8741Z",
+          "observed_at": "2026-11-05T10:50:00Z",
+          "catalog_version": "2026.11.04",
+          "catalog_date_released": "2026-11-04T20:00:05.774Z",
           "confidence": 0.95,
-          "catalog_count": 1767,
+          "catalog_count": 1768,
           "matched_count": 0,
           "matched_cves": [],
           "matches": [],
           "api": {
-            "cache": "hit",
+            "cache": "miss",
             "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
-            "retrieved_at": "2026-11-04T02:38:44Z"
+            "status": 200,
+            "retrieved_at": "2026-11-05T10:50:00Z"
           }
         },
         "osera_openvex": {
           "source": "osera-openvex-feed",
           "url": "https://feed.finos.org/openvex.json",
           "feed_id": "https://feed.finos.org/openvex.json",
-          "feed_version": 161,
-          "feed_last_updated": "2026-11-02T15:22:11Z",
-          "retrieved_at": "2026-11-04T02:38:45Z",
-          "observed_at": "2026-11-04T02:38:45Z",
+          "feed_version": 193,
+          "feed_last_updated": "2026-11-05T10:46:14Z",
+          "retrieved_at": "2026-11-05T10:50:01Z",
+          "observed_at": "2026-11-05T10:50:01Z",
           "confidence": 0.95,
           "coverage_status": "covered",
-          "published_patch_count": 34,
+          "published_patch_count": 41,
           "published_versions": [
+            "2.7.18.1-osera-00111",
+            "2.7.18.1-osera-00110",
+            "2.7.18.1-osera-00109",
+            "2.7.18.1-osera-00108",
+            "2.7.18.1-osera-00107",
+            "2.7.18.1-osera-00106",
+            "2.7.18.1-osera-00105",
             "2.7.18.1-osera-00104",
             "2.7.18.1-osera-00103",
             "2.7.18.1-osera-00102",
@@ -7193,7 +7426,7 @@
             "2.7.18.1-osera-00053",
             "2.7.18.1-osera-00052"
           ],
-          "latest_published_version": "2.7.18.1-osera-00104",
+          "latest_published_version": "2.7.18.1-osera-00111",
           "fixed_advisory_count": 2,
           "fixed_advisories": [
             "CVE-2026-40973",
@@ -7204,10 +7437,157 @@
             "CVE-2026-40973",
             "CVE-2026-40975"
           ],
-          "raw_statement_count": 58,
-          "deduplicated_statement_count": 58,
-          "statement_count": 58,
+          "raw_statement_count": 72,
+          "deduplicated_statement_count": 72,
+          "statement_count": 72,
           "patches": [
+            {
+              "purl": "pkg:maven/org.springframework.boot/spring-boot@2.7.18.1-osera-00111",
+              "version": "2.7.18.1-osera-00111",
+              "base_version": "2.7.18.1",
+              "osera_sequence": 111,
+              "supplier": "moderne",
+              "status": "fixed",
+              "timestamp": "2026-11-05T10:38:12Z",
+              "fixed_advisories": [
+                "CVE-2026-40973",
+                "CVE-2026-40975"
+              ],
+              "aliases": [
+                "GHSA-m4x9-hx6x-2c43",
+                "GHSA-wwpq-f5c3-7hvx"
+              ],
+              "fixed_cves": [
+                "CVE-2026-40973",
+                "CVE-2026-40975"
+              ]
+            },
+            {
+              "purl": "pkg:maven/org.springframework.boot/spring-boot@2.7.18.1-osera-00110",
+              "version": "2.7.18.1-osera-00110",
+              "base_version": "2.7.18.1",
+              "osera_sequence": 110,
+              "supplier": "moderne",
+              "status": "fixed",
+              "timestamp": "2026-11-05T10:28:38Z",
+              "fixed_advisories": [
+                "CVE-2026-40973",
+                "CVE-2026-40975"
+              ],
+              "aliases": [
+                "GHSA-m4x9-hx6x-2c43",
+                "GHSA-wwpq-f5c3-7hvx"
+              ],
+              "fixed_cves": [
+                "CVE-2026-40973",
+                "CVE-2026-40975"
+              ]
+            },
+            {
+              "purl": "pkg:maven/org.springframework.boot/spring-boot@2.7.18.1-osera-00109",
+              "version": "2.7.18.1-osera-00109",
+              "base_version": "2.7.18.1",
+              "osera_sequence": 109,
+              "supplier": "moderne",
+              "status": "fixed",
+              "timestamp": "2026-11-05T10:19:04Z",
+              "fixed_advisories": [
+                "CVE-2026-40973",
+                "CVE-2026-40975"
+              ],
+              "aliases": [
+                "GHSA-m4x9-hx6x-2c43",
+                "GHSA-wwpq-f5c3-7hvx"
+              ],
+              "fixed_cves": [
+                "CVE-2026-40973",
+                "CVE-2026-40975"
+              ]
+            },
+            {
+              "purl": "pkg:maven/org.springframework.boot/spring-boot@2.7.18.1-osera-00108",
+              "version": "2.7.18.1-osera-00108",
+              "base_version": "2.7.18.1",
+              "osera_sequence": 108,
+              "supplier": "moderne",
+              "status": "fixed",
+              "timestamp": "2026-11-05T10:09:49Z",
+              "fixed_advisories": [
+                "CVE-2026-40973",
+                "CVE-2026-40975"
+              ],
+              "aliases": [
+                "GHSA-m4x9-hx6x-2c43",
+                "GHSA-wwpq-f5c3-7hvx"
+              ],
+              "fixed_cves": [
+                "CVE-2026-40973",
+                "CVE-2026-40975"
+              ]
+            },
+            {
+              "purl": "pkg:maven/org.springframework.boot/spring-boot@2.7.18.1-osera-00107",
+              "version": "2.7.18.1-osera-00107",
+              "base_version": "2.7.18.1",
+              "osera_sequence": 107,
+              "supplier": "moderne",
+              "status": "fixed",
+              "timestamp": "2026-11-05T10:00:04Z",
+              "fixed_advisories": [
+                "CVE-2026-40973",
+                "CVE-2026-40975"
+              ],
+              "aliases": [
+                "GHSA-m4x9-hx6x-2c43",
+                "GHSA-wwpq-f5c3-7hvx"
+              ],
+              "fixed_cves": [
+                "CVE-2026-40973",
+                "CVE-2026-40975"
+              ]
+            },
+            {
+              "purl": "pkg:maven/org.springframework.boot/spring-boot@2.7.18.1-osera-00106",
+              "version": "2.7.18.1-osera-00106",
+              "base_version": "2.7.18.1",
+              "osera_sequence": 106,
+              "supplier": "moderne",
+              "status": "fixed",
+              "timestamp": "2026-11-05T09:50:43Z",
+              "fixed_advisories": [
+                "CVE-2026-40973",
+                "CVE-2026-40975"
+              ],
+              "aliases": [
+                "GHSA-m4x9-hx6x-2c43",
+                "GHSA-wwpq-f5c3-7hvx"
+              ],
+              "fixed_cves": [
+                "CVE-2026-40973",
+                "CVE-2026-40975"
+              ]
+            },
+            {
+              "purl": "pkg:maven/org.springframework.boot/spring-boot@2.7.18.1-osera-00105",
+              "version": "2.7.18.1-osera-00105",
+              "base_version": "2.7.18.1",
+              "osera_sequence": 105,
+              "supplier": "moderne",
+              "status": "fixed",
+              "timestamp": "2026-11-05T09:41:06Z",
+              "fixed_advisories": [
+                "CVE-2026-40973",
+                "CVE-2026-40975"
+              ],
+              "aliases": [
+                "GHSA-m4x9-hx6x-2c43",
+                "GHSA-wwpq-f5c3-7hvx"
+              ],
+              "fixed_cves": [
+                "CVE-2026-40973",
+                "CVE-2026-40975"
+              ]
+            },
             {
               "purl": "pkg:maven/org.springframework.boot/spring-boot@2.7.18.1-osera-00104",
               "version": "2.7.18.1-osera-00104",
@@ -7894,6 +8274,153 @@
             }
           ],
           "published_patches": [
+            {
+              "purl": "pkg:maven/org.springframework.boot/spring-boot@2.7.18.1-osera-00111",
+              "version": "2.7.18.1-osera-00111",
+              "base_version": "2.7.18.1",
+              "osera_sequence": 111,
+              "supplier": "moderne",
+              "status": "fixed",
+              "timestamp": "2026-11-05T10:38:12Z",
+              "fixed_advisories": [
+                "CVE-2026-40973",
+                "CVE-2026-40975"
+              ],
+              "aliases": [
+                "GHSA-m4x9-hx6x-2c43",
+                "GHSA-wwpq-f5c3-7hvx"
+              ],
+              "fixed_cves": [
+                "CVE-2026-40973",
+                "CVE-2026-40975"
+              ]
+            },
+            {
+              "purl": "pkg:maven/org.springframework.boot/spring-boot@2.7.18.1-osera-00110",
+              "version": "2.7.18.1-osera-00110",
+              "base_version": "2.7.18.1",
+              "osera_sequence": 110,
+              "supplier": "moderne",
+              "status": "fixed",
+              "timestamp": "2026-11-05T10:28:38Z",
+              "fixed_advisories": [
+                "CVE-2026-40973",
+                "CVE-2026-40975"
+              ],
+              "aliases": [
+                "GHSA-m4x9-hx6x-2c43",
+                "GHSA-wwpq-f5c3-7hvx"
+              ],
+              "fixed_cves": [
+                "CVE-2026-40973",
+                "CVE-2026-40975"
+              ]
+            },
+            {
+              "purl": "pkg:maven/org.springframework.boot/spring-boot@2.7.18.1-osera-00109",
+              "version": "2.7.18.1-osera-00109",
+              "base_version": "2.7.18.1",
+              "osera_sequence": 109,
+              "supplier": "moderne",
+              "status": "fixed",
+              "timestamp": "2026-11-05T10:19:04Z",
+              "fixed_advisories": [
+                "CVE-2026-40973",
+                "CVE-2026-40975"
+              ],
+              "aliases": [
+                "GHSA-m4x9-hx6x-2c43",
+                "GHSA-wwpq-f5c3-7hvx"
+              ],
+              "fixed_cves": [
+                "CVE-2026-40973",
+                "CVE-2026-40975"
+              ]
+            },
+            {
+              "purl": "pkg:maven/org.springframework.boot/spring-boot@2.7.18.1-osera-00108",
+              "version": "2.7.18.1-osera-00108",
+              "base_version": "2.7.18.1",
+              "osera_sequence": 108,
+              "supplier": "moderne",
+              "status": "fixed",
+              "timestamp": "2026-11-05T10:09:49Z",
+              "fixed_advisories": [
+                "CVE-2026-40973",
+                "CVE-2026-40975"
+              ],
+              "aliases": [
+                "GHSA-m4x9-hx6x-2c43",
+                "GHSA-wwpq-f5c3-7hvx"
+              ],
+              "fixed_cves": [
+                "CVE-2026-40973",
+                "CVE-2026-40975"
+              ]
+            },
+            {
+              "purl": "pkg:maven/org.springframework.boot/spring-boot@2.7.18.1-osera-00107",
+              "version": "2.7.18.1-osera-00107",
+              "base_version": "2.7.18.1",
+              "osera_sequence": 107,
+              "supplier": "moderne",
+              "status": "fixed",
+              "timestamp": "2026-11-05T10:00:04Z",
+              "fixed_advisories": [
+                "CVE-2026-40973",
+                "CVE-2026-40975"
+              ],
+              "aliases": [
+                "GHSA-m4x9-hx6x-2c43",
+                "GHSA-wwpq-f5c3-7hvx"
+              ],
+              "fixed_cves": [
+                "CVE-2026-40973",
+                "CVE-2026-40975"
+              ]
+            },
+            {
+              "purl": "pkg:maven/org.springframework.boot/spring-boot@2.7.18.1-osera-00106",
+              "version": "2.7.18.1-osera-00106",
+              "base_version": "2.7.18.1",
+              "osera_sequence": 106,
+              "supplier": "moderne",
+              "status": "fixed",
+              "timestamp": "2026-11-05T09:50:43Z",
+              "fixed_advisories": [
+                "CVE-2026-40973",
+                "CVE-2026-40975"
+              ],
+              "aliases": [
+                "GHSA-m4x9-hx6x-2c43",
+                "GHSA-wwpq-f5c3-7hvx"
+              ],
+              "fixed_cves": [
+                "CVE-2026-40973",
+                "CVE-2026-40975"
+              ]
+            },
+            {
+              "purl": "pkg:maven/org.springframework.boot/spring-boot@2.7.18.1-osera-00105",
+              "version": "2.7.18.1-osera-00105",
+              "base_version": "2.7.18.1",
+              "osera_sequence": 105,
+              "supplier": "moderne",
+              "status": "fixed",
+              "timestamp": "2026-11-05T09:41:06Z",
+              "fixed_advisories": [
+                "CVE-2026-40973",
+                "CVE-2026-40975"
+              ],
+              "aliases": [
+                "GHSA-m4x9-hx6x-2c43",
+                "GHSA-wwpq-f5c3-7hvx"
+              ],
+              "fixed_cves": [
+                "CVE-2026-40973",
+                "CVE-2026-40975"
+              ]
+            },
             {
               "purl": "pkg:maven/org.springframework.boot/spring-boot@2.7.18.1-osera-00104",
               "version": "2.7.18.1-osera-00104",
@@ -8599,9 +9126,10 @@
           ],
           "scope_note": "Authoritative OSERA OpenVEX published patch versions and fixed advisories. Absence from this feed means no published OSERA fix was found, not zero vulnerabilities. Version-specific OpenVEX statements apply only to the exact PURL version and remain distinct from package-wide OSV advisories.",
           "api": {
-            "cache": "hit",
+            "cache": "miss",
             "url": "https://feed.finos.org/openvex.json",
-            "retrieved_at": "2026-11-04T02:38:45Z"
+            "status": 200,
+            "retrieved_at": "2026-11-05T10:50:01Z"
           }
         }
       },
@@ -8648,7 +9176,7 @@
         "homepage": "https://requests.readthedocs.io/"
       },
       "scores": {
-        "project_vitality": 92.6,
+        "project_vitality": 92.4,
         "security_health": 75.0,
         "sustainability_governance": 77.8,
         "dependency_hygiene": 61.6,
@@ -8663,10 +9191,10 @@
         "github": {
           "source": "github-api",
           "url": "https://api.github.com/repos/psf/requests",
-          "observed_at": "2026-11-04T03:08:30Z",
+          "observed_at": "2026-11-05T11:01:18Z",
           "confidence": 0.9,
-          "stars": 54603,
-          "forks": 11513,
+          "stars": 54611,
+          "forks": 11504,
           "open_issues": 247,
           "created_at": "2011-02-13T18:38:17Z",
           "pushed_at": "2026-11-02T16:55:12Z",
@@ -8674,16 +9202,16 @@
           "latest_release": "v2.34.2",
           "latest_release_at": "2026-05-14T19:27:15Z",
           "commits_365d": 116,
-          "commits_180d": 49,
+          "commits_180d": 47,
           "commits_90d": 7,
           "commits_30d": 1,
           "active_contributors_365d": 23,
-          "active_contributors_180d": 12,
+          "active_contributors_180d": 11,
           "active_contributors_90d": 2,
           "active_contributors_30d": 1,
-          "issues_opened_365d": 55,
-          "issues_closed_365d": 34,
-          "issue_closure_ratio_365d": 0.618,
+          "issues_opened_365d": 0,
+          "issues_closed_365d": 0,
+          "issue_closure_ratio_365d": null,
           "closed_pr_sample": 300,
           "merged_pr_sample": 91,
           "pr_merge_ratio": 0.303,
@@ -8693,36 +9221,39 @@
             "cache": "miss",
             "url": "https://api.github.com/repos/psf/requests",
             "status": 200,
-            "retrieved_at": "2026-11-04T03:08:30Z"
+            "retrieved_at": "2026-11-05T11:01:18Z"
           },
           "release_api": {
             "cache": "miss",
             "url": "https://api.github.com/repos/psf/requests/releases?per_page=100&page=1",
             "status": 200,
-            "retrieved_at": "2026-11-04T03:08:31Z"
+            "retrieved_at": "2026-11-05T11:01:18Z"
           },
           "commit_api": {
             "cache": "miss",
-            "url": "https://api.github.com/repos/psf/requests/commits?since=2025-11-04T03:07:56Z&per_page=100&page=1",
+            "url": "https://api.github.com/repos/psf/requests/commits?since=2025-11-05T10:49:48Z&per_page=100&page=1",
             "status": 200,
-            "retrieved_at": "2026-11-04T03:08:32Z"
+            "retrieved_at": "2026-11-05T11:01:19Z",
+            "pages_fetched": 2
           },
           "issue_api": {
             "cache": "miss",
-            "url": "https://api.github.com/repos/psf/requests/issues?state=all&since=2025-11-04T03:07:56Z&per_page=100&page=1",
+            "url": "https://api.github.com/repos/psf/requests/issues?state=all&since=2025-11-05T10:49:48Z&per_page=100&page=1",
             "status": 200,
-            "retrieved_at": "2026-11-04T03:08:33Z"
+            "retrieved_at": "2026-11-05T11:01:20Z",
+            "pages_fetched": 3
           },
           "pull_api": {
             "cache": "miss",
             "url": "https://api.github.com/repos/psf/requests/pulls?state=closed&per_page=100&page=1",
             "status": 200,
-            "retrieved_at": "2026-11-04T03:08:37Z"
+            "retrieved_at": "2026-11-05T11:01:24Z",
+            "pages_fetched": 3
           }
         },
         "package_registry": {
           "source": "combined-registry-evidence",
-          "observed_at": "2026-11-04T03:08:40Z",
+          "observed_at": "2026-11-05T11:01:27Z",
           "confidence": 0.9,
           "url": "https://api.deps.dev/v3/systems/PYPI/packages/requests",
           "system": "PYPI",
@@ -8731,26 +9262,26 @@
           "latest_published_at": "2026-05-14T19:25:26Z",
           "latest_is_default": true,
           "deprecated_version_count": 2,
-          "dependent_count": 189491,
-          "direct_dependent_count": 92366,
-          "indirect_dependent_count": 102006,
+          "dependent_count": 189512,
+          "direct_dependent_count": 92384,
+          "indirect_dependent_count": 102020,
           "package_api": {
             "cache": "miss",
             "url": "https://api.deps.dev/v3/systems/PYPI/packages/requests",
             "status": 200,
-            "retrieved_at": "2026-11-04T03:08:40Z"
+            "retrieved_at": "2026-11-05T11:01:27Z"
           },
           "dependents_api": {
             "cache": "miss",
             "url": "https://api.deps.dev/v3alpha/systems/PYPI/packages/requests/versions/2.34.2:dependents",
             "status": 200,
-            "retrieved_at": "2026-11-04T03:08:41Z"
+            "retrieved_at": "2026-11-05T11:01:27Z"
           }
         },
         "openssf_scorecard": {
           "source": "openssf-scorecard-api",
           "url": "https://api.scorecard.dev/projects/github.com/psf/requests",
-          "observed_at": "2026-11-04T03:08:40Z",
+          "observed_at": "2026-11-05T11:01:27Z",
           "confidence": 0.95,
           "score": 8.4,
           "scorecard_version": "v5.6.0",
@@ -8845,13 +9376,13 @@
             "cache": "miss",
             "url": "https://api.scorecard.dev/projects/github.com/psf/requests",
             "status": 200,
-            "retrieved_at": "2026-11-04T03:08:40Z"
+            "retrieved_at": "2026-11-05T11:01:27Z"
           }
         },
         "osv": {
           "source": "osv-query-api",
           "url": "https://api.osv.dev/v1/query",
-          "observed_at": "2026-11-04T03:08:41Z",
+          "observed_at": "2026-11-05T11:01:28Z",
           "confidence": 0.9,
           "query": {
             "package": {
@@ -9037,7 +9568,7 @@
             "cache": "miss",
             "url": "https://api.osv.dev/v1/query",
             "status": 200,
-            "retrieved_at": "2026-11-04T03:08:41Z"
+            "retrieved_at": "2026-11-05T11:01:28Z"
           }
         },
         "openssf_criticality": {
@@ -9047,19 +9578,19 @@
         },
         "chaoss_derived": {
           "source": "github-api-derived",
-          "observed_at": "2026-11-04T03:08:30Z",
+          "observed_at": "2026-11-05T11:01:18Z",
           "confidence": 0.765,
           "active_contributors_365d": 23,
-          "active_contributors_180d": 12,
+          "active_contributors_180d": 11,
           "active_contributors_90d": 2,
           "active_contributors_30d": 1,
           "commits_365d": 116,
-          "commits_180d": 49,
+          "commits_180d": 47,
           "commits_90d": 7,
           "commits_30d": 1,
-          "issues_opened_365d": 55,
-          "issues_closed_365d": 34,
-          "issue_closure_ratio_365d": 0.618,
+          "issues_opened_365d": 0,
+          "issues_closed_365d": 0,
+          "issue_closure_ratio_365d": null,
           "closed_pr_sample": 300,
           "merged_pr_sample": 91,
           "pr_merge_ratio": 0.303,
@@ -9069,28 +9600,29 @@
         "cisa_kev": {
           "source": "cisa-kev-json",
           "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
-          "observed_at": "2026-11-04T02:38:44Z",
-          "catalog_version": "2026.11.03",
-          "catalog_date_released": "2026-11-03T20:00:24.8741Z",
+          "observed_at": "2026-11-05T10:50:00Z",
+          "catalog_version": "2026.11.04",
+          "catalog_date_released": "2026-11-04T20:00:05.774Z",
           "confidence": 0.95,
-          "catalog_count": 1767,
+          "catalog_count": 1768,
           "matched_count": 0,
           "matched_cves": [],
           "matches": [],
           "api": {
-            "cache": "hit",
+            "cache": "miss",
             "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
-            "retrieved_at": "2026-11-04T02:38:44Z"
+            "status": 200,
+            "retrieved_at": "2026-11-05T10:50:00Z"
           }
         },
         "osera_openvex": {
           "source": "osera-openvex-feed",
           "url": "https://feed.finos.org/openvex.json",
           "feed_id": "https://feed.finos.org/openvex.json",
-          "feed_version": 161,
-          "feed_last_updated": "2026-11-02T15:22:11Z",
-          "retrieved_at": "2026-11-04T02:38:45Z",
-          "observed_at": "2026-11-04T02:38:45Z",
+          "feed_version": 193,
+          "feed_last_updated": "2026-11-05T10:46:14Z",
+          "retrieved_at": "2026-11-05T10:50:01Z",
+          "observed_at": "2026-11-05T10:50:01Z",
           "confidence": 0.95,
           "coverage_status": "no_published_osera_fix",
           "published_patch_count": 0,
@@ -9117,9 +9649,10 @@
           ],
           "scope_note": "Authoritative OSERA OpenVEX published patch versions and fixed advisories. Absence from this feed means no published OSERA fix was found, not zero vulnerabilities. Version-specific OpenVEX statements apply only to the exact PURL version and remain distinct from package-wide OSV advisories.",
           "api": {
-            "cache": "hit",
+            "cache": "miss",
             "url": "https://feed.finos.org/openvex.json",
-            "retrieved_at": "2026-11-04T02:38:45Z"
+            "status": 200,
+            "retrieved_at": "2026-11-05T10:50:01Z"
           }
         }
       },
@@ -9158,24 +9691,24 @@
         "homepage": "https://lodash.com/"
       },
       "scores": {
-        "project_vitality": 70.7,
+        "project_vitality": 70.3,
         "security_health": 55.9,
         "sustainability_governance": 59.5,
         "dependency_hygiene": 59.8,
         "ecosystem_resilience": 99.8,
         "ecosystem_criticality": 100.0,
         "confidence": 0.91,
-        "oss_vitality": 67.5,
-        "enterprise_priority_risk": 32.5,
+        "oss_vitality": 67.4,
+        "enterprise_priority_risk": 32.6,
         "undermaintenance_pressure": 5.27
       },
       "evidence": {
         "github": {
           "source": "github-api",
           "url": "https://api.github.com/repos/lodash/lodash",
-          "observed_at": "2026-11-04T03:08:41Z",
+          "observed_at": "2026-11-05T11:01:28Z",
           "confidence": 0.9,
-          "stars": 61267,
+          "stars": 61269,
           "forks": 7219,
           "open_issues": 125,
           "created_at": "2012-04-07T04:11:46Z",
@@ -9184,16 +9717,16 @@
           "latest_release": "4.18.1",
           "latest_release_at": "2026-04-01T21:01:28Z",
           "commits_365d": 34,
-          "commits_180d": 10,
+          "commits_180d": 9,
           "commits_90d": 2,
           "commits_30d": 0,
           "active_contributors_365d": 10,
           "active_contributors_180d": 6,
           "active_contributors_90d": 1,
           "active_contributors_30d": 0,
-          "issues_opened_365d": 71,
-          "issues_closed_365d": 45,
-          "issue_closure_ratio_365d": 0.634,
+          "issues_opened_365d": 0,
+          "issues_closed_365d": 0,
+          "issue_closure_ratio_365d": null,
           "closed_pr_sample": 300,
           "merged_pr_sample": 74,
           "pr_merge_ratio": 0.247,
@@ -9203,36 +9736,38 @@
             "cache": "miss",
             "url": "https://api.github.com/repos/lodash/lodash",
             "status": 200,
-            "retrieved_at": "2026-11-04T03:08:41Z"
+            "retrieved_at": "2026-11-05T11:01:28Z"
           },
           "release_api": {
             "cache": "miss",
             "url": "https://api.github.com/repos/lodash/lodash/releases?per_page=100&page=1",
             "status": 200,
-            "retrieved_at": "2026-11-04T03:08:42Z"
+            "retrieved_at": "2026-11-05T11:01:28Z"
           },
           "commit_api": {
             "cache": "miss",
-            "url": "https://api.github.com/repos/lodash/lodash/commits?since=2025-11-04T03:07:56Z&per_page=100&page=1",
+            "url": "https://api.github.com/repos/lodash/lodash/commits?since=2025-11-05T10:49:48Z&per_page=100&page=1",
             "status": 200,
-            "retrieved_at": "2026-11-04T03:08:42Z"
+            "retrieved_at": "2026-11-05T11:01:29Z"
           },
           "issue_api": {
             "cache": "miss",
-            "url": "https://api.github.com/repos/lodash/lodash/issues?state=all&since=2025-11-04T03:07:56Z&per_page=100&page=1",
+            "url": "https://api.github.com/repos/lodash/lodash/issues?state=all&since=2025-11-05T10:49:48Z&per_page=100&page=1",
             "status": 200,
-            "retrieved_at": "2026-11-04T03:08:43Z"
+            "retrieved_at": "2026-11-05T11:01:30Z",
+            "pages_fetched": 3
           },
           "pull_api": {
             "cache": "miss",
             "url": "https://api.github.com/repos/lodash/lodash/pulls?state=closed&per_page=100&page=1",
             "status": 200,
-            "retrieved_at": "2026-11-04T03:08:47Z"
+            "retrieved_at": "2026-11-05T11:01:34Z",
+            "pages_fetched": 3
           }
         },
         "package_registry": {
           "source": "combined-registry-evidence",
-          "observed_at": "2026-11-04T03:08:52Z",
+          "observed_at": "2026-11-05T11:01:40Z",
           "confidence": 0.9,
           "url": "https://api.deps.dev/v3/systems/NPM/packages/lodash",
           "system": "NPM",
@@ -9241,28 +9776,28 @@
           "latest_published_at": "2026-04-01T21:01:20Z",
           "latest_is_default": true,
           "deprecated_version_count": 1,
-          "dependent_count": 702930,
-          "direct_dependent_count": 178023,
-          "indirect_dependent_count": 540798,
+          "dependent_count": 703103,
+          "direct_dependent_count": 178071,
+          "indirect_dependent_count": 540933,
           "package_api": {
             "cache": "miss",
             "url": "https://api.deps.dev/v3/systems/NPM/packages/lodash",
             "status": 200,
-            "retrieved_at": "2026-11-04T03:08:52Z"
+            "retrieved_at": "2026-11-05T11:01:40Z"
           },
           "dependents_api": {
             "cache": "miss",
             "url": "https://api.deps.dev/v3alpha/systems/NPM/packages/lodash/versions/4.18.1:dependents",
             "status": 200,
-            "retrieved_at": "2026-11-04T03:08:52Z"
+            "retrieved_at": "2026-11-05T11:01:40Z"
           },
-          "npm_monthly_downloads": 615348015,
-          "npm_download_window": "2026-10-04..2026-11-02"
+          "npm_monthly_downloads": 637912587,
+          "npm_download_window": "2026-10-06..2026-11-04"
         },
         "openssf_scorecard": {
           "source": "openssf-scorecard-api",
           "url": "https://api.scorecard.dev/projects/github.com/lodash/lodash",
-          "observed_at": "2026-11-04T03:08:51Z",
+          "observed_at": "2026-11-05T11:01:40Z",
           "confidence": 0.95,
           "score": 6.5,
           "scorecard_version": "v5.5.0",
@@ -9381,13 +9916,13 @@
             "cache": "miss",
             "url": "https://api.scorecard.dev/projects/github.com/lodash/lodash",
             "status": 200,
-            "retrieved_at": "2026-11-04T03:08:51Z"
+            "retrieved_at": "2026-11-05T11:01:40Z"
           }
         },
         "osv": {
           "source": "osv-query-api",
           "url": "https://api.osv.dev/v1/query",
-          "observed_at": "2026-11-04T03:08:52Z",
+          "observed_at": "2026-11-05T11:01:40Z",
           "confidence": 0.9,
           "query": {
             "package": {
@@ -9495,19 +10030,19 @@
             },
             {
               "id": "GHSA-xxjr-mmjv-4gpg",
-              "summary": "Lodash has Prototype Pollution Vulnerability in `_.unset` and `_.omit` functions",
+              "summary": "Lodash has Prototype Pollution Vulnerability in `_.unset`, `_.omit`, and `_.pullAt` functions",
               "aliases": [
                 "CVE-2025-13465"
               ],
               "published": "2026-01-21T23:01:22Z",
-              "modified": "2026-10-17T02:55:54.229635593Z"
+              "modified": "2026-11-04T03:15:10.832238351Z"
             }
           ],
           "api": {
             "cache": "miss",
             "url": "https://api.osv.dev/v1/query",
             "status": 200,
-            "retrieved_at": "2026-11-04T03:08:52Z"
+            "retrieved_at": "2026-11-05T11:01:40Z"
           }
         },
         "openssf_criticality": {
@@ -9517,19 +10052,19 @@
         },
         "chaoss_derived": {
           "source": "github-api-derived",
-          "observed_at": "2026-11-04T03:08:41Z",
+          "observed_at": "2026-11-05T11:01:28Z",
           "confidence": 0.765,
           "active_contributors_365d": 10,
           "active_contributors_180d": 6,
           "active_contributors_90d": 1,
           "active_contributors_30d": 0,
           "commits_365d": 34,
-          "commits_180d": 10,
+          "commits_180d": 9,
           "commits_90d": 2,
           "commits_30d": 0,
-          "issues_opened_365d": 71,
-          "issues_closed_365d": 45,
-          "issue_closure_ratio_365d": 0.634,
+          "issues_opened_365d": 0,
+          "issues_closed_365d": 0,
+          "issue_closure_ratio_365d": null,
           "closed_pr_sample": 300,
           "merged_pr_sample": 74,
           "pr_merge_ratio": 0.247,
@@ -9539,28 +10074,29 @@
         "cisa_kev": {
           "source": "cisa-kev-json",
           "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
-          "observed_at": "2026-11-04T02:38:44Z",
-          "catalog_version": "2026.11.03",
-          "catalog_date_released": "2026-11-03T20:00:24.8741Z",
+          "observed_at": "2026-11-05T10:50:00Z",
+          "catalog_version": "2026.11.04",
+          "catalog_date_released": "2026-11-04T20:00:05.774Z",
           "confidence": 0.95,
-          "catalog_count": 1767,
+          "catalog_count": 1768,
           "matched_count": 0,
           "matched_cves": [],
           "matches": [],
           "api": {
-            "cache": "hit",
+            "cache": "miss",
             "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
-            "retrieved_at": "2026-11-04T02:38:44Z"
+            "status": 200,
+            "retrieved_at": "2026-11-05T10:50:00Z"
           }
         },
         "osera_openvex": {
           "source": "osera-openvex-feed",
           "url": "https://feed.finos.org/openvex.json",
           "feed_id": "https://feed.finos.org/openvex.json",
-          "feed_version": 161,
-          "feed_last_updated": "2026-11-02T15:22:11Z",
-          "retrieved_at": "2026-11-04T02:38:45Z",
-          "observed_at": "2026-11-04T02:38:45Z",
+          "feed_version": 193,
+          "feed_last_updated": "2026-11-05T10:46:14Z",
+          "retrieved_at": "2026-11-05T10:50:01Z",
+          "observed_at": "2026-11-05T10:50:01Z",
           "confidence": 0.95,
           "coverage_status": "no_published_osera_fix",
           "published_patch_count": 0,
@@ -9587,9 +10123,10 @@
           ],
           "scope_note": "Authoritative OSERA OpenVEX published patch versions and fixed advisories. Absence from this feed means no published OSERA fix was found, not zero vulnerabilities. Version-specific OpenVEX statements apply only to the exact PURL version and remain distinct from package-wide OSV advisories.",
           "api": {
-            "cache": "hit",
+            "cache": "miss",
             "url": "https://feed.finos.org/openvex.json",
-            "retrieved_at": "2026-11-04T02:38:45Z"
+            "status": 200,
+            "retrieved_at": "2026-11-05T10:50:01Z"
           }
         }
       },
@@ -9628,42 +10165,42 @@
         "homepage": "https://www.openssl-library.org/"
       },
       "scores": {
-        "project_vitality": 96.4,
+        "project_vitality": 100.0,
         "security_health": 60.0,
         "sustainability_governance": 73.0,
         "dependency_hygiene": 22.5,
         "ecosystem_resilience": 68.7,
         "ecosystem_criticality": 55.7,
         "confidence": 0.46,
-        "oss_vitality": 67.4,
-        "enterprise_priority_risk": 26.5,
-        "undermaintenance_pressure": 1.46
+        "oss_vitality": 68.3,
+        "enterprise_priority_risk": 25.8,
+        "undermaintenance_pressure": 1.45
       },
       "evidence": {
         "github": {
           "source": "github-api",
           "url": "https://api.github.com/repos/openssl/openssl",
-          "observed_at": "2026-11-04T03:08:53Z",
+          "observed_at": "2026-11-05T11:01:41Z",
           "confidence": 0.9,
-          "stars": 31183,
-          "forks": 11573,
-          "open_issues": 1637,
+          "stars": 31193,
+          "forks": 11576,
+          "open_issues": 1638,
           "created_at": "2013-01-15T22:34:48Z",
-          "pushed_at": "2026-11-03T13:31:15Z",
+          "pushed_at": "2026-11-05T08:08:14Z",
           "default_branch": "master",
           "latest_release": "openssl-4.1.0",
           "latest_release_at": "2026-10-23T12:23:31Z",
           "commits_365d": 893,
           "commits_180d": 839,
-          "commits_90d": 662,
-          "commits_30d": 113,
-          "active_contributors_365d": 118,
-          "active_contributors_180d": 105,
-          "active_contributors_90d": 89,
-          "active_contributors_30d": 42,
-          "issues_opened_365d": 73,
-          "issues_closed_365d": 12,
-          "issue_closure_ratio_365d": 0.164,
+          "commits_90d": 657,
+          "commits_30d": 116,
+          "active_contributors_365d": 121,
+          "active_contributors_180d": 108,
+          "active_contributors_90d": 92,
+          "active_contributors_30d": 45,
+          "issues_opened_365d": 0,
+          "issues_closed_365d": 0,
+          "issue_closure_ratio_365d": null,
           "closed_pr_sample": 300,
           "merged_pr_sample": 3,
           "pr_merge_ratio": 0.01,
@@ -9673,36 +10210,39 @@
             "cache": "miss",
             "url": "https://api.github.com/repos/openssl/openssl",
             "status": 200,
-            "retrieved_at": "2026-11-04T03:08:53Z"
+            "retrieved_at": "2026-11-05T11:01:41Z"
           },
           "release_api": {
             "cache": "miss",
             "url": "https://api.github.com/repos/openssl/openssl/releases?per_page=100&page=1",
             "status": 200,
-            "retrieved_at": "2026-11-04T03:08:54Z"
+            "retrieved_at": "2026-11-05T11:01:42Z"
           },
           "commit_api": {
             "cache": "miss",
-            "url": "https://api.github.com/repos/openssl/openssl/commits?since=2025-11-04T03:07:56Z&per_page=100&page=1",
+            "url": "https://api.github.com/repos/openssl/openssl/commits?since=2025-11-05T10:49:48Z&per_page=100&page=1",
             "status": 200,
-            "retrieved_at": "2026-11-04T03:08:54Z"
+            "retrieved_at": "2026-11-05T11:01:42Z",
+            "pages_fetched": 10
           },
           "issue_api": {
             "cache": "miss",
-            "url": "https://api.github.com/repos/openssl/openssl/issues?state=all&since=2025-11-04T03:07:56Z&per_page=100&page=1",
+            "url": "https://api.github.com/repos/openssl/openssl/issues?state=all&since=2025-11-05T10:49:48Z&per_page=100&page=1",
             "status": 200,
-            "retrieved_at": "2026-11-04T03:09:01Z"
+            "retrieved_at": "2026-11-05T11:01:49Z",
+            "pages_fetched": 3
           },
           "pull_api": {
             "cache": "miss",
             "url": "https://api.github.com/repos/openssl/openssl/pulls?state=closed&per_page=100&page=1",
             "status": 200,
-            "retrieved_at": "2026-11-04T03:09:05Z"
+            "retrieved_at": "2026-11-05T11:01:53Z",
+            "pages_fetched": 3
           }
         },
         "package_registry": {
           "source": "not-applicable",
-          "observed_at": "2026-11-04T03:07:56Z",
+          "observed_at": "2026-11-05T10:49:48Z",
           "confidence": 0.0,
           "note": "No deps.dev package query is configured for ecosystem: system"
         },
@@ -9714,7 +10254,7 @@
         "openssf_scorecard": {
           "source": "openssf-scorecard-api",
           "url": "https://api.scorecard.dev/projects/github.com/openssl/openssl",
-          "observed_at": "2026-11-04T03:09:08Z",
+          "observed_at": "2026-11-05T11:01:56Z",
           "confidence": 0.95,
           "score": 6.3,
           "scorecard_version": "v5.6.0",
@@ -9809,7 +10349,7 @@
             "cache": "miss",
             "url": "https://api.scorecard.dev/projects/github.com/openssl/openssl",
             "status": 200,
-            "retrieved_at": "2026-11-04T03:09:08Z"
+            "retrieved_at": "2026-11-05T11:01:56Z"
           }
         },
         "osv": {
@@ -9824,19 +10364,19 @@
         },
         "chaoss_derived": {
           "source": "github-api-derived",
-          "observed_at": "2026-11-04T03:08:53Z",
+          "observed_at": "2026-11-05T11:01:41Z",
           "confidence": 0.765,
-          "active_contributors_365d": 118,
-          "active_contributors_180d": 105,
-          "active_contributors_90d": 89,
-          "active_contributors_30d": 42,
+          "active_contributors_365d": 121,
+          "active_contributors_180d": 108,
+          "active_contributors_90d": 92,
+          "active_contributors_30d": 45,
           "commits_365d": 893,
           "commits_180d": 839,
-          "commits_90d": 662,
-          "commits_30d": 113,
-          "issues_opened_365d": 73,
-          "issues_closed_365d": 12,
-          "issue_closure_ratio_365d": 0.164,
+          "commits_90d": 657,
+          "commits_30d": 116,
+          "issues_opened_365d": 0,
+          "issues_closed_365d": 0,
+          "issue_closure_ratio_365d": null,
           "closed_pr_sample": 300,
           "merged_pr_sample": 3,
           "pr_merge_ratio": 0.01,
@@ -9846,25 +10386,26 @@
         "cisa_kev": {
           "source": "cisa-kev-json",
           "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
-          "observed_at": "2026-11-04T02:38:44Z",
-          "catalog_version": "2026.11.03",
-          "catalog_date_released": "2026-11-03T20:00:24.8741Z",
+          "observed_at": "2026-11-05T10:50:00Z",
+          "catalog_version": "2026.11.04",
+          "catalog_date_released": "2026-11-04T20:00:05.774Z",
           "confidence": 0.95,
-          "catalog_count": 1767,
+          "catalog_count": 1768,
           "matched_count": 0,
           "matched_cves": [],
           "matches": [],
           "api": {
-            "cache": "hit",
+            "cache": "miss",
             "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
-            "retrieved_at": "2026-11-04T02:38:44Z"
+            "status": 200,
+            "retrieved_at": "2026-11-05T10:50:00Z"
           }
         },
         "osera_openvex": {
           "source": "not-applicable",
           "url": "https://feed.finos.org/openvex.json",
-          "retrieved_at": "2026-11-04T03:07:56Z",
-          "observed_at": "2026-11-04T03:07:56Z",
+          "retrieved_at": "2026-11-05T10:49:48Z",
+          "observed_at": "2026-11-05T10:49:48Z",
           "coverage_status": "not_applicable",
           "published_patch_count": 0,
           "fixed_advisory_count": 0,
